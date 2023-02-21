@@ -1,5 +1,6 @@
 package test;
 public class Auto {
+
     String modelo;
     int precio;
     Asiento [] asientos;
@@ -9,15 +10,15 @@ public class Auto {
     static int cantidadCreados;
 
     int cantidadAsientos(){
-        int numAsientos = 0;
+        int numeroAsientos = 0;
         for (int i = 0 ; i < asientos.length ; i++){
             if (asientos[i] != null){
-                numAsientos++;
+                numeroAsientos++;
             }
         }
-        return numAsientos;
+        return numeroAsientos;
     }
-    String verficarIntegridad(){
+    String verificarIntegridad(){
 
         if (registro == motor.registro){
 
